@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Resume|FlexBox|CustomFonts|Text&BoxShadow </title>
+
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@100&display=swap');
+
+            @font-face
+            {
+                font-family: 'Prabha';
+                src: url(Font/FontsFree-Net-France.ttf);
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+           body{
+                background-color: rgb(190, 187, 187);
+                border-width: 5px;
+                border-color: rgb(214, 217, 216);
+                border-radius: 10px;
+                border-style:solid;  
+                box-shadow: 4px 5px 20px 9px rgb(207, 208, 208);
+           }
+           
+            
+            h4{
+                color: rgb(243, 249, 247);
+                /*font-family: 'Lilita One', cursive;
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Roboto Slab', serif;*/
+            }
+            h3{
+                color: rgb(128, 6, 142);                
+                              
+            }
+            .row1, .row2, .row3, .row4, .row5
+            {
+                display: flex;                
+                flex-wrap: wrap;                
+            }   
+            .row1
+            {                
+                font-family:'Prabha';
+                align-items:flex-start;
+                justify-content:space-between;                
+            }
+            .row2, .about
+            {
+                background-color:rgb(154, 152, 152);
+                text-align: center;
+                justify-content: center;
+                border-width: 10px;
+                border-color: rgb(214, 217, 216);                  
+                box-shadow: 4px -6px 20px 9px rgb(207 208 208);
+            }
+            
+            .row3, .row4
+            {
+                align-items:flex-start;
+                justify-content:space-around;
+            }
+            
+            .row5
+            {
+                background-color: gainsboro;
+                align-items:flex-start;
+                justify-content:left;
+            }
+            a, .about
+            {
+                color: rgb(243, 249, 247);               
+                font-weight: bolder;                
+                text-decoration: none;
+            }
+            
+            .row1 div
+            {
+                width: 50%;
+                text-align: center;
+                border: 5px;
+            }
+            
+            .row1 div img
+            {
+                border-width: 5px;
+                border-color: rgb(214, 217, 216);                  
+                box-shadow: 2px -9px 20px 20px rgb(207 208 208)
+            }
+            #glow, h6
+            {
+                text-shadow: -4px -4px 4px ivory;
+            }
+            .row2 div
+            {               
+                padding: 10px;                                           
+            }
+            .row3 div, .row4 div
+            {
+                width: "33.33333333%";
+                text-align: center;                
+            }
+            .row3 div img, .row4 div img
+            {
+                width:300px;
+                height: 250px;                
+            }
+            .row5 div
+            {
+                width: 50%;
+                text-align: left;
+                border: 5px;
+            }
+            .row5 li{
+                padding: 5px;
+                text-align: left;
+            }           
+            
+            
+        </style>
+    </head>
+    <body >                       
+        
+        <div class="row1" >
+            <div ><img src="IMG/Prabhapic.jpg" alt="Me" width=100px></div>
+            <div id="glow">
+                <h2>JAYAPRABHA</h2> 
+                Full stack Devloper
+                
+            </div>
+        </div>    
+           
+        <div class="row2" >
+            
+                <div>
+                   <a href="" >Projects</a>                    
+                </div>
+                <div>
+                    <a href="#about" >AboutMe</a>                    
+                </div>
+                <div>
+                    <a href="" >Contact</a>                     
+                </div>                
+        </div>  
+
+        <div align="center">
+            <div id="glow" ><h3>Project/Experience</h3></div>                
+        </div>        
+    
+        <div class="row3">
+            <div >                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 1" >
+                <h4>Project1</h4>
+            </div>
+            <div >
+                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 2" >
+                <h4>Project2</h4>
+            </div>
+            <div >
+                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 3" >
+                <h4>Project3</h4>
+            </div>               
+        </div>
+        <div class="row4">
+            <div >                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 4" >
+                <h4>Project4</h4>
+            </div>
+            <div >
+                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 5" >
+                <h4>Project5</h4>
+            </div>
+            <div >
+                
+                <img src="IMG/BubbleLights.jpg" alt="PROJECT 6" >
+                <h4>Project6</h4>
+            </div>           
+        </div>
+        <div align="center" class="about" id="about">
+            <div >AboutMe</div>                
+        </div>
+        
+        <div  class= "row5" >
+            <div id="glow"><h2>Education details</h2>
+                <ul>
+                    <li>B.E -ELECTRICAL AND ELECTRONICS ENGINEERING</li>
+                    <li>Diploma in Embedded systems</li>
+                </ul>
+                
+            </div>
+            <div id="glow"><h2>Contact details</h2>
+                    prbhjy@gmail.com                
+            </div>        
+        </div>
+        
+        <div>
+            <div align="center">
+                <h6>@copyrights reserved inc</h6>
+            </div>
+        </div>
+    </body>
+    </html>
